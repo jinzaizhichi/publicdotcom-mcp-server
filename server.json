@@ -1,0 +1,29 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.tarricsookdeo/publicdotcom-mcp-server",
+  "title": "Public.com Trading API",
+  "description": "Connect AI assistants to your Public.com brokerage account. Trade stocks, options, and crypto — get quotes, manage orders, and view your portfolio.",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "pip",
+      "identifier": "publicdotcom-mcp-server",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environment_variables": [
+        {
+          "name": "PUBLIC_COM_SECRET",
+          "description": "Your Public.com API secret key. Get one at https://public.com/settings/v2/api",
+          "required": true
+        },
+        {
+          "name": "PUBLIC_COM_ACCOUNT_ID",
+          "description": "Default account ID. Optional — if not set, the server will prompt for it.",
+          "required": false
+        }
+      ]
+    }
+  ]
+}
